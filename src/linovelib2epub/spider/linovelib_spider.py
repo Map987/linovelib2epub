@@ -317,7 +317,8 @@ class BaseLinovelibSpider(BaseNovelWebsiteSpider):
             "-enable-features=NetworkService,NetworkServiceInProcess,LoadCryptoTokenExtension,PermuteTLSExtensions",
             "-disable-features=FlashDeprecationWarning,EnablePasswordsAccountStorage",
             "-deny-permission-prompts",
-            "-disable-gpu"
+            "-disable-gpu",
+            "no-sandbox"
         ]
         for argument in arguments:
             co.set_argument(argument)
